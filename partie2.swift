@@ -51,11 +51,11 @@ class Triangle: Shape {
 
     // Implémentation personnalisée de la fonction racine carrée
     private func customSqrt(_ x: Double) -> Double {
-        var guess = 1.0
+        var mesure = 1.0
         for _ in 0..<10 {
-            guess = (guess + x / guess) / 2
+            mesure = (mesure + x / mesure) / 2
         }
-        return guess
+        return mesure
     }
 }
 
